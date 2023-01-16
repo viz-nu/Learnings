@@ -29,23 +29,23 @@
 
 // 7. Reverse Integer
 
-const reverse = function (x) {
-    x += ""
+// const reverse = function (x) {
+//     x += ""
 
 
-    if (x < 0) {
-        x = x.replace("-", "")
-        x = x.split("").reverse().join("")
-        if(x>=((2**31)-1)){return 0}
-        return  x * (-1)
-    }
+//     if (x < 0) {
+//         x = x.replace("-", "")
+//         x = x.split("").reverse().join("")
+//         if(x>=((2**31)-1)){return 0}
+//         return  x * (-1)
+//     }
 
-    x = x.split("").reverse().join("")
-    if(x>=((2**31)-1)){return 0}
-    return  (x * 1) 
+//     x = x.split("").reverse().join("")
+//     if(x>=((2**31)-1)){return 0}
+//     return  (x * 1) 
 
-};
-console.log(reverse(153423646))
+// };
+// console.log(reverse(153423646))
 
 
 // 
