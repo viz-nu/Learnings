@@ -153,3 +153,25 @@
 
 
 // console.log(removeDuplicates(nums));
+
+
+// const arr1=[1,3,4,2,5,7]
+// const arr2=[1,3,6,9,20]
+// const arr3=[1,3,11,21]
+// let arr=[...new Set(arr1),...new Set(arr2),...new Set(arr3)]
+// function intersection(arr) {
+//     arr=arr.filter((ele,index)=>arr.indexOf(ele)!=index)
+//     arr=arr.filter((ele,index)=>arr.indexOf(ele)!=index)
+//     console.log(arr)
+// }
+// intersection(arr)
+
+// const obj={
+//     a:28,b:5,d:11,e:6
+// }
+// function objsorter(obj) {
+//     for(let e in obj){
+
+//     }
+// }
+// objsorter(obj)

@@ -102,7 +102,7 @@
 
 // const sumOfdigits=(num)=>{
 // num+=""
-//   arr=num.split("")
+// arr=num.split("")
 
 //   return arr.reduce((acc,ele)=>{acc+=(ele*1)
 //     return acc
@@ -110,3 +110,154 @@
 // }
 
 // console.log(sumOfdigits(54321));
+
+// WAP to delete all the positive numbers from the arr
+
+// const pos=(arr)=>{
+//    arr= arr.filter(ele=>ele<=0)
+//   return arr
+// }
+
+// console.log(pos([2,-1,-5.6,4,89,43,-35,09]));
+
+
+// 5. WAP to remove duplicates from the given array?
+
+
+
+// const pos=(arr)=>{
+//    arr= [...new Set(arr)]
+//   return arr
+// }
+
+// console.log(pos([2,21,-5.6,21,89,43,-5,09,2,34,43]));
+
+
+
+// Fibinocci series?
+// const febo=(n)=>{
+// if (n<1){return "indvalid input"}
+// let arr=[0,1];
+// if (n==1){return arr[0]}
+// else if (n==2){return arr}
+// else { 
+//     for(let i=2;i<n;i++){
+//         arr.push(arr[i-1]+arr[i-2])
+// }
+// return arr
+// }
+// }
+// console.log(febo(10));
+
+
+// Armstrong/Narcisstic number or not?
+
+// const Narcisstic=(n)=>{
+// chars=n.toString(10).split("")
+
+//     let sum = chars.reduce((acc,ele)=>acc += (ele)**chars.length,0);
+//    if (sum==n) {return "It is a Narcisstic number"}
+
+// return "It is not a Narcisstic number"
+// }
+// console.log(Narcisstic(100));
+
+// Sum of the digits of given number?
+
+
+// const sum=(n)=>{
+// chars=n.toString(10).split("")
+
+// return chars.reduce((acc,ele)=>acc += (ele*1),0);
+// }
+// console.log(sum(1634));
+
+// Given an array of positive integer elements. Print out the count of Prime Numbers and
+// Narcissistic numbers from the array and remove those elements from the array.
+
+// function Isprime(n) {
+// for (let i = 2; i < n; i++) {
+//     if(n%i==0){return false}
+// }
+// return true
+// }
+// function IsNars(n) {
+   
+//         chars=n.toString(10).split("")
+        
+//             let sum = chars.reduce((acc,ele)=>acc += (ele)**chars.length,0);
+//            if (sum==n) {return true}
+//         return false
+// }
+// function arraymod(arr) {
+// return arr.filter(ele=>{if(!Isprime(ele)&&!IsNars(ele)){return ele}})
+// }
+// console.log(arraymod([10, 20, 30, 40, 2, 5, 7, 153, 1024, 1634, 11]));
+
+
+// WAP to Multiply two numbers without using multiplication symbol?
+// const mult=(a,b)=>{
+// for(sum=0;b>0;b--){sum+=a}
+// return sum
+// }
+// console.log(mult(13,11));
+
+// Write a function that pre-pends(adding as pre-fix) a zero to single digit numbers
+// const zero=(arr)=>{
+    
+//     return arr.map((ele)=>{return (ele<10) ?  ("0"+ele) :  (ele) })
+// }
+// console.log(zero([5, 17, 3, 9, 98]));
+
+// Write an algorithm to Split the Input String into two strings based on even and odd indexes.
+// Left pad with '000' and right pad with '111' to the split string and display the output.
+
+// const splitevenodd=(str)=>{
+//     let even="000",odd="000"
+// for (let i = 0; i < str.length; i++) {
+//     ((i+1)%2==0)? odd+=str[i]:even+=str[i]
+// }
+// even+="111"
+// odd+="111"
+// console.log(even,odd);
+// }
+// splitevenodd("Hello there")
+
+// .Split the array and add the first part to the end. There is a given array and split it from a
+// specified position, and move the first part of array add to the end.
+// Write a function that accepts an array and index position to split as arguments.
+
+// const shiftEle=(arr,n)=>{
+// let narr=arr.splice(n,arr.length-n)
+// return [...narr,...arr]
+// }
+// console.log(shiftEle([12, 10, 5, 6, 52, 36],2));
+
+
+// Defang IPv4 and Validate
+// const validate=(str)=>{
+// let arr=str.split(".").filter(ele=>ele>255)
+// return arr.length ? "its an Invalid IP":"its valid IP"
+// }
+// console.log(validate("255.643.12.11"));
+
+// Write an algorithm to convert 24 hours format time to 12 hours format time.
+// const To12=(str)=>{
+//    arr= str.split(":")
+//     if(arr[0]<12){str+=" AM"} 
+//     else{
+//         arr[0]-=12;
+//         str=arr.join(":")
+//         str+=" PM"
+//     }
+
+//     return str
+// }
+
+// console.log(To12("5:30"));
+
+
+
+// Phase 2
+
+k
