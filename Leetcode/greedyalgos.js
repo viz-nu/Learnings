@@ -72,3 +72,16 @@
 // A[i] :: 1 -> 10^5
 
 
+// const obj={
+//     s:656835,d:6568,e:6546,a:556,t:6654,v:65546,z:621
+// }
+// let a=[],obj2={}
+// for(let i in obj){
+//  a.push({[i]:obj[i]})
+// }
+// a=a.sort((a,b)=>Object.values(a)-Object.values(b))
+// a.forEach(e => {
+//     obj2={...obj2,[Object.keys(e)]:Object.values(e)[0]} 
+// });
+
+// console.log(obj2);
