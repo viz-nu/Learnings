@@ -1,27 +1,27 @@
 // 3. Longest Substring Without Repeating Characters
 
 
-const lengthOfLongestSubstring = function (s) {
-    s = s.split("");
-    let a=[],c=0,substr="";
-    // if(s.length==0 || s.length ==1){return s.length}
-    for (let i = c; i < s.length; i++) {
-        if(!substr.includes(s[i])){
-            substr+=s[i];
-        }
-        if ((i==s.length-1) || (substr.includes(s[i]))){
+// const lengthOfLongestSubstring = function (s) {
+//     s = s.split("");
+//     let a=[],c=0,substr="";
+//     // if(s.length==0 || s.length ==1){return s.length}
+//     for (let i = c; i < s.length; i++) {
+//         if(!substr.includes(s[i])){
+//             substr+=s[i];
+//         }
+//         if ((i==s.length-1) || (substr.includes(s[i]))){
            
-            a.push(substr);
-            substr=""
-            c++;
-            i=c;
-        }
-        console.log(substr);
-    }
-    return a
-};
+//             a.push(substr);
+//             substr=""
+//             c++;
+//             i=c;
+//         }
+//         console.log(substr);
+//     }
+//     return a
+// };
 
-console.log(lengthOfLongestSubstring("abc"));
+// console.log(lengthOfLongestSubstring("abc"));
 
 
 
@@ -48,3 +48,15 @@ console.log(lengthOfLongestSubstring("abc"));
 
 
 // 
+
+//11. Container With Most Water
+
+// const  maxArea = function(height) {
+//     let ar=0,i=0,j=height.length-1
+//     while (i<j) {
+//         ar = Math.max(ar,(j-i)*(Math.min(height[i],height[j])))
+//         height[i] <= height[j] ?  i++ : j--
+//     }
+//     return ar
+// };
+

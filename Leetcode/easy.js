@@ -97,9 +97,9 @@
 //         nums1.splice(i,1);
 //         i--;
 //        }
-        
+
 //     }
-    
+
 //     //   nums1 =nums1.sort((a,b) => a-b).filter(item => item>0)
 //     return (nums1);
 // };
@@ -125,7 +125,7 @@
 //     let y=x.split("").reverse().join("")
 
 //     return  (x===y) ? true :false
-    
+
 // };
 // console.log(isPalindrome(54322345));
 
@@ -175,3 +175,45 @@
 //     }
 // }
 // objsorter(obj)
+
+// 69. Sqrt(x)
+
+// const  mySqrt = function(x) {
+//     for(let i=1;i<x;i++){
+//         if(i*i==x) return i
+//         if(i*i>x) return i-1
+//     }
+// };
+// console.log(mySqrt(36));
+
+// 73. Set Matrix Zeroes
+
+
+// let a = [[1, 1, 1], [1, 0, 1], [1, 1, 1]]
+// const setZeroes = function (matrix) {
+
+//    let zeroLocations = matrix.map((ele,index)=>{return findZero(ele)})
+//     // return zeroLocations
+//     for (let i = 0; i < matrix.length; i++) {
+//         for (let j = 0; j < matrix[i].length; j++) {
+
+            
+//        }
+        
+//     }
+
+
+
+// };
+
+// const findZero = (arr) => {
+//     if (arr.indexOf(0)>-1) {
+//       let a=[]
+//         arr.forEach((ele, i) => {
+//             if (ele === 0) { a.push(i) }
+//         });
+//         return a
+//     }
+//     else return false
+// }
+// console.log(setZeroes(a));
