@@ -237,56 +237,83 @@
 //viz.balance=5000 makes balance 5000 which can be dangerous
 
 
-class BankAccount {
-    customerName;
-    accountNumber;
-    #balance=0;
-    constructor(customerName, balance) {
-        this.customerName = customerName;
-        this.accountNumber = Date.now();
-        this.#balance = balance;
-    }
-    deposit(amount) {
-        this.#balance = this.#balance * 1 + amount * 1;
-    };
+// class BankAccount {
+//     customerName;
+//     accountNumber;
+//     #balance=0;
+//     constructor(customerName, balance) {
+//         this.customerName = customerName;
+//         this.accountNumber = Date.now();
+//         this.#balance = balance;
+//     }
+//     deposit(amount) {
+//         this.#balance = this.#balance * 1 + amount * 1;
+//     };
 
-    withdraw(amount) {
-        this.#balance = this.#balance * 1 - amount * 1;
-    };
-    set balance(amount){
-        if(isNaN(amount)){//..................................................................
-            throw new Error("amount not a number")
-        }
-        this.#balance=amount
-    }
-    get balance(){    //.................................................................
-        return this.#balance
-    }
-}
-class SavingsAccount extends BankAccount {
-    transationLimit = 10000;
-    constructor(customerName, balance=0) {
-        super(customerName, balance)
-    }
-    takePersonalLoan = function (amount) {
-        console.log("taking personal loan :", amount);
-    };
-
-
-}
-class CurrentAccount extends BankAccount {
-    transationLimit = 50000;
-    constructor(customerName, balance=0) {
-        super(customerName, balance)
-    }
-
-    takeBusinessLoan = function (amount) {
-        console.log("taking business loan :", amount);
-    };
-
-}
-
-const viz = new CurrentAccount("viz", 5000)
+//     withdraw(amount) {
+//         this.#balance = this.#balance * 1 - amount * 1;
+//     };
+//     setBalance(amount){
+//         if(isNaN(amount)){//..................................................................
+//             throw new Error("amount not a number")
+//         }
+//         this.#balance=amount
+//     }
+//     get balance(){    //.................................................................
+//         return this.#balance
+//     }
+// }
+// class SavingsAccount extends BankAccount {
+//     transationLimit = 10000;
+//     constructor(customerName, balance=0) {
+//         super(customerName, balance)
+//     }
+//     takePersonalLoan = function (amount) {
+//         console.log("taking personal loan :", amount);
+//     };
 
 
-console.log(viz.balance)
+// }
+// class CurrentAccount extends BankAccount {
+//     transationLimit = 50000;
+//     constructor(customerName, balance=0) {
+//         super(customerName, balance)
+//     }
+
+//     takeBusinessLoan = function (amount) {
+//         console.log("taking business loan :", amount);
+//     };
+
+// }
+
+// const viz = new CurrentAccount("viz", 5000)
+// viz.balance=10
+
+// console.log(viz.balance)
+ 
+
+// 5/6 Static properties and methods _________________________________________________________________________________________________________________________________________________________________
+
+
+// class User{
+//     static id=1;
+//     constructor(name,age){
+//         this.name=name;
+//         this.age=age;
+//         this.id=User.id++;
+//     }
+//     static compareByAge(a,b){
+//         return a.age-b.age
+//     }
+// }
+
+// const user1= new User("vizz",23)
+// const user2= new User("tara",24)
+// const user3= new User("jyo",19)
+// let users=[]
+// users.push(user1,user2,user3);
+
+// users.sort(User.compareByAge)
+
+
+// console.log(users);
