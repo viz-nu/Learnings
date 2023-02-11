@@ -433,3 +433,25 @@
 // console.log(titleToNumber("AB"));
 
 
+// 27. Remove Element
+// const removeElement = function (nums, val) {
+//     nums = nums.filter((ele) => ele != val)
+//     console.log(nums, nums.length);
+// };
+// console.log(removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2));
+
+
+// 58. Length of Last Word
+// const lengthOfLastWord = function(s) {
+//    s=s.trim().split(" ")
+//    return s[s.length-1].length
+// };
+// console.log(lengthOfLastWord("   fly me   to   the moon  "));
+
+// 65. Valid Number
+
+// const isNumber = function(s) {
+//     return  (s*1 )?  true :false
+//   };
+//   console.log(isNumber("99e2.5"));
+

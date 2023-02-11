@@ -10,7 +10,7 @@
 //             substr+=s[i];
 //         }
 //         if ((i==s.length-1) || (substr.includes(s[i]))){
-           
+
 //             a.push(substr);
 //             substr=""
 //             c++;
@@ -82,3 +82,138 @@
 
 
 
+// 56. Merge Intervals
+
+// const merge = function (intervals) {
+//     intervals.sort((a, b) => a[0] - b[0])
+//     for (let i = 0; i < intervals.length; i++) {
+//         let up = overlap(intervals[i], intervals[i + 1])
+
+//         if (up) {
+//             intervals.splice(i, 1);
+//             intervals[i] = up;
+//             i--;
+
+//         }
+//     }
+
+//     function overlap(arr1, arr2) {
+//         if (!arr2 ) return false
+//         if (arr1[1] >= arr2[0]) {
+//             return (arr1[1] >= arr2[1]) ? arr1 : [arr1[0], arr2[1]]
+//         }
+//         else return false
+//     }
+//     return intervals
+// };
+// console.log(merge([[1, 3], [8, 10], [2, 6], [15, 18]]));
+
+
+
+// 438. Find All Anagrams in a String
+
+// const findAnagrams = function (s, p) {
+//     let ar = []
+//     for (let i = 0; i < s.length; i++) {
+//         let str = s.substr(i, p.length)
+//         if (isAnagram(str, p)) { ar.push(i) }
+//     }
+//     return ar
+//     function isAnagram(str, p) {
+//         str = str.split("").sort().join("");
+//         p = p.split("").sort().join("");
+//         return (str == p) ? true : false
+//     }
+// };
+// console.log(findAnagrams("abab", "ab"));
+
+
+// const intToRoman = function (num) {
+//   const roman = new Map([
+//     [1, "I"],
+//     [4, "IV"],
+//     [5, "V"],
+//     [9, "IX"],
+//     [10, "X"],
+//     [40, "XL"],
+//     [50, "L"],
+//     [90, "XC"],
+//     [100, "C"],
+//     [400, "CD"],
+//     [500, "D"],
+//     [900, "CM"],
+//     [1000, "M"]
+//   ]);
+//   let denom = ""
+//   if (num >= 1000) {
+//     let q = Math.floor(num / 1000)
+//     num = num % 1000
+//     while (q) {
+//       denom += `${roman.get(1000)}`
+//       q--
+//     }
+//   }
+//   if (num >= 900) {
+//     denom += `${roman.get(900)}`
+//     num = num % 900
+//   }
+//   if (num >= 500) {
+//     denom += `${roman.get(500)}`
+//     num = num % 500
+//   }
+//   if (num >= 400) {
+//     denom += `${roman.get(400)}`
+//     num = num % 400
+//   }
+//   if (num >= 100) {
+//     let q = Math.floor(num / 100)
+//     num = num % 100
+//     while (q) {
+//       denom += `${roman.get(100)}`
+//       q--
+//     }
+//   }
+//   if (num >= 90) {
+//     denom += `${roman.get(90)}`
+//     num = num % 90
+//   }
+//   if (num >= 50) {
+//     denom += `${roman.get(50)}`
+//     num = num % 50
+//   }
+//   if (num >= 40) {
+//     denom += `${roman.get(40)}`
+//     num = num % 40
+//   }
+//   if (num >= 10) {
+//     let q = Math.floor(num / 10)
+//     num = num % 10
+    
+//     while (q) {
+//       denom += `${roman.get(10)}`
+//       q--
+//     }
+//   }
+//   if (num >= 9) {
+//     denom += `${roman.get(9)}`
+//     num = num % 9
+//   }
+//   if (num >= 5) {
+//     denom += `${roman.get(5)}`
+//     num = num % 5
+//   }
+//   if (num >= 4) {
+//     denom += `${roman.get(4)}`
+//     num = num % 4
+//   }
+//   if (num >= 1) {
+//     let q = num
+//     while (q) {
+//       denom += `${roman.get(1)}`
+//       q--
+//     }
+//   }
+//   return denom
+// }
+console.log(intToRoman(283));
+  // 12. Integer to Roman
