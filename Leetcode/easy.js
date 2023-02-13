@@ -455,3 +455,14 @@
 //   };
 //   console.log(isNumber("99e2.5"));
 
+// 283. Move Zeroes
+// let nums=[ 1, 3, 0, 0, 12 ]
+// const moveZeroes = function(nums) {
+//     for (let i = 0; i < nums.length; i++) {
+//         nums.splice(nums.indexOf(0),1)
+//         nums.push(0)
+//     }
+//     };
+// moveZeroes(nums)
+// console.log(nums);
+

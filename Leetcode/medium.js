@@ -127,7 +127,7 @@
 // };
 // console.log(findAnagrams("abab", "ab"));
 
-
+  // 12. Integer to Roman
 // const intToRoman = function (num) {
 //   const roman = new Map([
 //     [1, "I"],
@@ -215,5 +215,32 @@
 //   }
 //   return denom
 // }
-console.log(intToRoman(283));
-  // 12. Integer to Roman
+// console.log(intToRoman(283));
+
+
+//215. Kth Largest Element in an Array
+// const findKthLargest = function(nums, k) {
+//   return [...new Set(nums)].sort((item1,item2) => item2-item1)[k-1]
+// };
+// console.log(findKthLargest([3,2,3,1,2,4,5,5,6],4));
+
+
+// 204. Count Primes
+// const countPrimes = function(n) {
+// let c=0
+// n--
+//   while(n){
+//     if (n==2) c++
+//     if ( n%2!=0  && isPrime(n)) c++
+//     n--
+//   }
+//   return c
+//     function isPrime(n) {
+//       if(n<2) return false
+//       if(n==2) return true
+//       for (let i = 2; i < n-1; i++) if (n%i==0) return false
+//       return true
+//     }
+// };
+// console.log(countPrimes(10));
+
